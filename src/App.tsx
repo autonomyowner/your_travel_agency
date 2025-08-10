@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Trips from './pages/Trips'
 import Book from './pages/Book'
+import TripDetail from './pages/TripDetail'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trips" element={<Trips />} />
+          <Route path="/trips/:slug" element={<TripDetail />} />
           <Route path="/book" element={<Book />} />
           <Route path="*" element={<Home />} />
         </Routes>

@@ -5,8 +5,9 @@ export default function Book() {
   const { search } = useLocation()
   const params = useMemo(() => new URLSearchParams(search), [search])
   const trip = params.get('trip') ?? ''
+  const prefillDate = params.get('date') ?? ''
 
-  const [date, setDate] = useState('')
+  const [date, setDate] = useState(prefillDate)
   const [travelers, setTravelers] = useState(2)
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {

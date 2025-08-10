@@ -39,7 +39,13 @@ export default function Trips() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4">
+              <div className="mt-4 flex items-center gap-3">
+                <Link
+                  to={`/trips/${t.slug}`}
+                  className="inline-flex items-center rounded-md border px-3 py-1.5 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+                >
+                  View details
+                </Link>
                 <Link
                   to={`/book?trip=${t.slug}`}
                   className="inline-flex items-center rounded-md bg-[--color-brand] px-3 py-1.5 text-sm font-semibold text-white hover:bg-slate-900"
