@@ -4,9 +4,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="inline-flex items-center gap-2 font-semibold text-slate-900">
-          <span className="inline-block h-2 w-2 rounded-full bg-[--color-brand]"></span>
-          your_agency_name
+        <Link to="/" className="inline-flex items-center gap-3 font-semibold text-slate-900">
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-[--color-brand] text-white shadow-sm">
+            YA
+          </span>
+          <span className="text-base tracking-tight">your_agency_name</span>
         </Link>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-6">
@@ -23,7 +25,7 @@ export default function Header() {
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="hidden md:block">
               <NavLink
                 to="/trips"
                 className={({ isActive }) =>

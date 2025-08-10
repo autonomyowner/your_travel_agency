@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import Section from '../components/Section'
 
 export default function Home() {
   const navigate = useNavigate()
@@ -54,9 +55,31 @@ export default function Home() {
               </button>
             </form>
           </div>
-          <div className="aspect-video w-full overflow-hidden rounded-xl bg-[--color-brand-light]"></div>
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-[--color-brand]">
+            <div className="absolute inset-0 grid grid-cols-6 opacity-10">
+              <div className="border-r border-white/30"></div>
+              <div className="border-r border-white/30"></div>
+              <div className="border-r border-white/30"></div>
+              <div className="border-r border-white/30"></div>
+              <div className="border-r border-white/30"></div>
+              <div></div>
+            </div>
+          </div>
         </div>
       </section>
+      <Section title="Featured trips" subtitle="Curated experiences our travelers love.">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="overflow-hidden rounded-xl border">
+              <div className="aspect-video bg-[--color-brand-light]"></div>
+              <div className="p-4">
+                <div className="h-5 w-2/3 rounded bg-slate-200"></div>
+                <div className="mt-2 h-4 w-1/2 rounded bg-slate-100"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
     </main>
   )
 }
