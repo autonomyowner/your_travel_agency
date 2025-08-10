@@ -1,0 +1,34 @@
+[
+  {
+    "id": "trip_italy_coast_7d",
+    "slug": "amalfi-coast-retreat-7d",
+    "title": "Amalfi Coast Retreat",
+    "subtitle": "Boutique clifftop stays and Capri by private boat",
+    "destination": ["Italy", "Amalfi"],
+    "durationDays": 7,
+    "priceFrom": 2890,
+    "currency": "USD",
+    "rating": 4.8,
+    "highlights": ["Private boat to Capri", "Cliffside boutique hotel"],
+    "availabilityBlocks": [
+      { "startDate": "2025-06-10", "endDate": "2025-06-17", "availableSpots": 8 }
+    ]
+  },
+  {
+    "id": "trip_kyoto_5d",
+    "slug": "kyoto-temples-and-tea-5d",
+    "title": "Kyoto Temples & Tea",
+    "subtitle": "Quiet gardens, ceremony, and sunrise at Fushimi Inari",
+    "destination": ["Japan", "Kyoto"],
+    "durationDays": 5,
+    "priceFrom": 1990,
+    "currency": "USD",
+    "rating": 4.7,
+    "highlights": ["Tea ceremony", "Fushimi Inari sunrise"],
+    "availabilityBlocks": [
+      { "startDate": "2025-04-05", "endDate": "2025-04-10", "availableSpots": 10 }
+    ]
+  }
+]
+
+
